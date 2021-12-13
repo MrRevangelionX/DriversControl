@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(driversRemain < 8 || driversRemain > 1){
-                    //Escriba el codigo decambio de color
+                    //Escriba el codigo decambio de colo
                 }else{
                     Toast.makeText(MainActivity.this,"Hello Motherfuckers!", Toast.LENGTH_SHORT);
                 }
