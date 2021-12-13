@@ -1,5 +1,7 @@
 package com.mrrx.driverscontrol;
 
+import static android.widget.Toast.LENGTH_SHORT;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
@@ -53,10 +55,12 @@ public class MainActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(driversRemain < 8 || driversRemain > 1){
-                    //Escriba el codigo decambio de colo
+                if(driversRemain > 1 && btnFlag1 == false){
+                    btnFlag1 = true;
+                    btn1.setBackgroundColor(Color.parseColor("#FF0000"));
                 }else{
-                    Toast.makeText(MainActivity.this,"Hello Motherfuckers!", Toast.LENGTH_SHORT);
+                    btnFlag1 = false;
+                    btn1.setBackgroundColor(Color.parseColor("#00FF00"));
                 }
             }
         });
