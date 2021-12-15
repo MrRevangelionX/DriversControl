@@ -15,6 +15,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.sql.Driver;
+
 public class MainActivity extends AppCompatActivity {
 
     int driversRemain, totalDrivers;
@@ -27,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        totalDrivers = 0;
-        driversRemain = totalDrivers;
         btnFlag1 = false;
         btnFlag2 = false;
         btnFlag3 = false;
@@ -55,9 +55,12 @@ public class MainActivity extends AppCompatActivity {
         btnFlag24 = false;
         btnFlag25 = false;
 
+        TextView tvRemaining = findViewById(R.id.registro);
+
         setTotalDrivers();
 
-        TextView tvRemaining = findViewById(R.id.registro);
+        driversRemain = totalDrivers;
+
         tvRemaining.setText("Cantidad de Drivers Disponible: " + totalDrivers);
 
         Button btn1 = (Button) findViewById(R.id.btn1);
@@ -175,7 +178,8 @@ public class MainActivity extends AppCompatActivity {
                 .setView(inputText)
                 .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        // FIRE ZE MISSILES!
+                        totalDrivers = Integer.parseInt(inputText.getText().toString());
+                        Toast.makeText(MainActivity.this, totalDrivers, Toast.LENGTH_LONG).show();
                     }
                 })
                 .show();
