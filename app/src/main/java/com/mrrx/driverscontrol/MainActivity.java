@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int driversRemain;
+    int driversRemain, totalDrivers;
     Boolean btnFlag1, btnFlag2, btnFlag3, btnFlag4, btnFlag5, btnFlag6, btnFlag7, btnFlag8, btnFlag9, btnFlag10, btnFlag11, btnFlag12, btnFlag13, btnFlag14
             , btnFlag15, btnFlag16, btnFlag17, btnFlag18, btnFlag19, btnFlag20, btnFlag21, btnFlag22, btnFlag23, btnFlag24, btnFlag25;
     TextView tvRemaining;
@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView tvRemaining = findViewById(R.id.registro);
-        driversRemain = 1;
+        totalDrivers = 1;
+        driversRemain = totalDrivers;
         btnFlag1 = false;
         btnFlag2 = false;
         btnFlag3 = false;
@@ -52,19 +53,27 @@ public class MainActivity extends AppCompatActivity {
         btnFlag24 = false;
         btnFlag25 = false;
 
+        tvRemaining.setText("Cantidad de Drivers Disponible: " + totalDrivers);
+
         Button btn1 = (Button) findViewById(R.id.btn1);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(driversRemain > 1){
+                if(driversRemain > 0 || btnFlag1 == true){
                     if(btnFlag1 == false) {
+                        driversRemain--;
                         btnFlag1 = true;
                         btn1.setText("RESERVADO");
                         btn1.setBackgroundColor(Color.parseColor("#FF0000"));
+                        tvRemaining.setText("Cantidad de Drivers Disponible: " + driversRemain);
                     }else{
+                        if(driversRemain<totalDrivers){
+                            driversRemain++;
+                        }
                         btnFlag1 = false;
                         btn1.setText("08:00 AM");
                         btn1.setBackgroundColor(Color.parseColor("#00FF00"));
+                        tvRemaining.setText("Cantidad de Drivers Disponible: " + driversRemain);
                     }
                 }else{
                     Toast.makeText(MainActivity.this,"No hay drivers disponibles", LENGTH_SHORT).show();
@@ -72,7 +81,83 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btn2 = (Button) findViewById(R.id.btn2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(driversRemain > 0 | btnFlag2==true){
+                    if(btnFlag2 == false) {
+                        driversRemain--;
+                        btnFlag2 = true;
+                        btn2.setText("RESERVADO");
+                        btn2.setBackgroundColor(Color.parseColor("#FF0000"));
+                        tvRemaining.setText("Cantidad de Drivers Disponible: " + driversRemain);
+                    }else{
+                        if(driversRemain<totalDrivers){
+                            driversRemain++;
+                        }
+                        btnFlag2 = false;
+                        btn2.setText("08:30 AM");
+                        btn2.setBackgroundColor(Color.parseColor("#00FF00"));
+                        tvRemaining.setText("Cantidad de Drivers Disponible: " + driversRemain);
+                    }
+                }else{
+                    Toast.makeText(MainActivity.this,"No hay drivers disponibles", LENGTH_SHORT).show();
+                }
+            }
+        });
 
+        Button btn3 = (Button) findViewById(R.id.btn3);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(driversRemain > 0 | btnFlag3 == true){
+                    if(btnFlag3 == false) {
+                        driversRemain--;
+                        btnFlag3 = true;
+                        btn3.setText("RESERVADO");
+                        btn3.setBackgroundColor(Color.parseColor("#FF0000"));
+                        tvRemaining.setText("Cantidad de Drivers Disponible: " + driversRemain);
+                    }else{
+                        if(driversRemain<totalDrivers){
+                            driversRemain++;
+                        }
+                        btnFlag3 = false;
+                        btn3.setText("00:00 AM");
+                        btn3.setBackgroundColor(Color.parseColor("#00FF00"));
+                        tvRemaining.setText("Cantidad de Drivers Disponible: " + driversRemain);
+                    }
+                }else{
+                    Toast.makeText(MainActivity.this,"No hay drivers disponibles", LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        Button btn4 = (Button) findViewById(R.id.btn4);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(driversRemain > 0 | btnFlag4 == true){
+                    if(btnFlag4 == false) {
+                        driversRemain--;
+                        btnFlag4 = true;
+                        btn4.setText("RESERVADO");
+                        btn4.setBackgroundColor(Color.parseColor("#FF0000"));
+                        tvRemaining.setText("Cantidad de Drivers Disponible: " + driversRemain);
+                    }else{
+                        if(driversRemain<totalDrivers){
+                            driversRemain++;
+                        }
+                        btnFlag4 = false;
+                        btn4.setText("00:00 AM");
+                        btn4.setBackgroundColor(Color.parseColor("#00FF00"));
+                        tvRemaining.setText("Cantidad de Drivers Disponible: " + driversRemain);
+                    }
+                }else{
+                    Toast.makeText(MainActivity.this,"No hay drivers disponibles", LENGTH_SHORT).show();
+                }
+            }
+        });
 
     }
 }
