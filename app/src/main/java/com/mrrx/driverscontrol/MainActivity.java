@@ -5,10 +5,13 @@ import static android.widget.Toast.LENGTH_SHORT;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView tvRemaining = findViewById(R.id.registro);
-        totalDrivers = 1;
+        totalDrivers = 0;
         driversRemain = totalDrivers;
         btnFlag1 = false;
         btnFlag2 = false;
@@ -53,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
         btnFlag24 = false;
         btnFlag25 = false;
 
+        setTotalDrivers();
+
+        TextView tvRemaining = findViewById(R.id.registro);
         tvRemaining.setText("Cantidad de Drivers Disponible: " + totalDrivers);
 
         Button btn1 = (Button) findViewById(R.id.btn1);
@@ -159,5 +164,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void setTotalDrivers() {
+        final EditText inputText = new EditText(this);
+        inputText.setInputType(InputType.TYPE_CLASS_NUMBER);
+        new AlertDialog.Builder(MainActivity.this)
+                .setTitle("Drivers Manager")
+                .setMessage("Set number of Available Drivers for Today:")
+                .setView(inputText)
+                .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // FIRE ZE MISSILES!
+                    }
+                })
+                .show();
     }
 }
