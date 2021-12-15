@@ -2,6 +2,7 @@ package com.mrrx.driverscontrol;
 
 import static android.widget.Toast.LENGTH_SHORT;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView tvRemaining = findViewById(R.id.registro);
-        driversRemain = 8;
+        driversRemain = 1;
         btnFlag1 = false;
         btnFlag2 = false;
         btnFlag3 = false;
@@ -55,15 +56,23 @@ public class MainActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(driversRemain > 1 && btnFlag1 == false){
-                    btnFlag1 = true;
-                    btn1.setBackgroundColor(Color.parseColor("#FF0000"));
+                if(driversRemain > 1){
+                    if(btnFlag1 == false) {
+                        btnFlag1 = true;
+                        btn1.setText("RESERVADO");
+                        btn1.setBackgroundColor(Color.parseColor("#FF0000"));
+                    }else{
+                        btnFlag1 = false;
+                        btn1.setText("08:00 AM");
+                        btn1.setBackgroundColor(Color.parseColor("#00FF00"));
+                    }
                 }else{
-                    btnFlag1 = false;
-                    btn1.setBackgroundColor(Color.parseColor("#00FF00"));
+                    Toast.makeText(MainActivity.this,"No hay drivers disponibles", LENGTH_SHORT).show();
                 }
             }
         });
+
+
 
     }
 }
