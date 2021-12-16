@@ -1432,7 +1432,7 @@ public class MainActivity extends AppCompatActivity {
         try{
             SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy h:mm a");
             Date date1 = sdf.parse(date+" "+time);
-            Log.d("Fecha Mostrada:------",date1.toString());
+            //Log.d("Fecha Mostrada:------",date1.toString());
             Calendar cal1 = Calendar.getInstance();
             cal1.setTime(date1);
             Calendar beginCal = Calendar.getInstance();
