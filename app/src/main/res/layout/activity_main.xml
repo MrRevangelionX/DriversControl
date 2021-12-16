@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="08.00"
+            android:text="08:00 AM"
             android:textColor="#000000"
             android:background="#00FF00"/>
         <Button
@@ -41,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="08.30"
+            android:text="08:30 AM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -49,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="09.00"
+            android:text="09:00 AM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
     </LinearLayout>
@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="09.30"
+            android:text="09:30 AM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -71,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="10.00"
+            android:text="10:00 AM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -79,7 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="10.30"
+            android:text="10:30 AM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
     </LinearLayout>
@@ -93,7 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="11.00"
+            android:text="11:00 AM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -101,7 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="11.30"
+            android:text="11:30 AM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -109,7 +109,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="12.00"
+            android:text="12:00 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
     </LinearLayout>
@@ -123,7 +123,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="12.30"
+            android:text="12:30 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -131,7 +131,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="13.00"
+            android:text="01:00 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -139,7 +139,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="13.30"
+            android:text="01:30 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
     </LinearLayout>
@@ -153,7 +153,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="14.00"
+            android:text="02:00 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -161,7 +161,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="14.30"
+            android:text="02:30 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -169,7 +169,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="15.00"
+            android:text="03:00 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
     </LinearLayout>
@@ -183,7 +183,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="15.30"
+            android:text="03:30 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -191,7 +191,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="16.00"
+            android:text="04:00 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -199,7 +199,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="16.30"
+            android:text="04:30 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
     </LinearLayout>
@@ -213,7 +213,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="17.00"
+            android:text="05:00 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -221,7 +221,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="17.30"
+            android:text="05:30 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -229,7 +229,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="18.00"
+            android:text="06:00 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
     </LinearLayout>
@@ -243,7 +243,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="18.30"
+            android:text="06:30 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -251,7 +251,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="19.00"
+            android:text="0700 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -259,7 +259,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="19.30"
+            android:text="07:30 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
         <Button
@@ -267,7 +267,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10px"
-            android:text="20.00"
+            android:text="08:00 PM"
             android:textColor="#000000"
             android:background ="#00FF00"/>
     </LinearLayout>

@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">DriversControl</string>
+    <string name="app_name">Drivers Control</string>
+    <string name="developer">Develop by Julio Pineda</string>
 </resources>
